@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_class_black_24dp"
+            android:title="@string/classes" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/sign_out" />
+    </group>
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_help_black_24dp"
+        android:title="@string/help" />
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="@string/cast"
+        tools:icon="@drawable/mr_button_light" />
+</menu>

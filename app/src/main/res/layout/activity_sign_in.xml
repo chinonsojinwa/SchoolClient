@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:background="#aaa"
+    android:backgroundTint="#6C7A89"
+    android:backgroundTintMode="multiply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <LinearLayout
+        android:id="@+id/user_info"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="34sp"
+            app:met_baseColor="#fff"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#fff"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="34sp"
+            app:met_baseColor="#fff"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#fff"
+            app:met_singleLineEllipsis="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cbRemember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:buttonTint="#fff"
+            android:text="Remember me"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvForgotPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="forgot password?"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="50dp"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_alignParentBottom="true"
+        android:text="SIGN IN"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
