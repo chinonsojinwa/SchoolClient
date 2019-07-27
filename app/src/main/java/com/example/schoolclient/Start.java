@@ -19,6 +19,7 @@ public class Start extends AppCompatActivity {
 
         Enter = findViewById(R.id.enter);
         Enter.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 Intent homeIntent = new Intent(Start.this, SignIn.class);
