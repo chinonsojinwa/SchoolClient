@@ -25,5 +25,6 @@ public class Start extends AppCompatActivity {
                 startActivity(homeIntent);
             }
         });
+
     }
 }
