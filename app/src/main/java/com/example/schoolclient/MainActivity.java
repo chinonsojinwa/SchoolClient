@@ -18,11 +18,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    RecyclerView recycler_grade;
+    RecyclerView.LayoutManager layoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,13 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        recycler_grade = (RecyclerView) findViewById(R.id.recycler_grades);
+        recycler_grade.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recycler_grade.setLayoutManager(layoutManager);
+
+
     }
 
     @Override
