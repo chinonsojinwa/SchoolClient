@@ -18,7 +18,8 @@ public class Start extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         Enter = findViewById(R.id.enter);
-        Enter.setOnClickListener(new View.OnClickListener() {
+        Enter.setOnClickListener(new View.OnClickListener()
+        {
 
             @Override
             public void onClick(View view) {
